@@ -1,5 +1,6 @@
 
 ; @author Ammar Faizi <ammarfaizi2@gmail.com> https://www.facebook.com/ammarfaizi2
+; @license MIT
 
 ; struct _my_node
 ; 64 bytes data
