@@ -17,8 +17,7 @@ _start:
 	sub rsp, struct_size * struct_amount
 
 	; init head head [0]
-	xor rax, rax
-	mov [rbp - (struct_size * 0)], rax ; prev is nullptr
+	mov qword [rbp - (struct_size * 0)], 0 ; prev is nullptr
 	lea rax, [rbp - struct_size]
 	mov [rbp - (struct_size * 0) - 8], rax ; next is [1]
 	lea rdi, [rbp - (struct_size * 0) - 8 - 64]
